@@ -24,7 +24,3 @@ class VisitType(DjangoObjectType):
     class Meta:
         model = Visit
         fields = ("clinic", "patient", "purpose")
-
-
-
-

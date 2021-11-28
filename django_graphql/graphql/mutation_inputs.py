@@ -17,3 +17,12 @@ class VisitInput(InputObjectType):
     clinic_name = graphene.String(required=True)
     patient_name = graphene.String(required=True)
     purpose = graphene.String(required=True)
+
+
+class UpdateVisitInput(InputObjectType):
+    id = graphene.ID(required=True)
+    purpose = graphene.String(required=True)
+
+
+class DeleteVisitInput(InputObjectType):
+    id = graphene.ID(required=True)
