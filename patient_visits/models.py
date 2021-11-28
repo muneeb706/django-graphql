@@ -16,8 +16,10 @@ class Patient(models.Model):
 
 class Purpose(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=100, choices=(("appointment", "appointment"),
-                                                     ("treatment", "treatment")))
+    name = models.CharField(max_length=100,
+                            choices=(("appointment", "appointment"),
+                                     ("treatment", "treatment")),
+                            unique=True)
 
 
 class Visit(models.Model):
