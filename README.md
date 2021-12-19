@@ -27,4 +27,9 @@ Follow the steps below to run this project:
 Now, the project should be up and running. By default django server runs in <b>localhost:8000</b> and you should be able to access the GraphiQL interface by typing
 http://localhost:8000/graphql address in the address bar of the browser.
 
+### How to disable CORS:
+
+To connect with this API locally, you might need to disable cors. Follow these steps mentioned in https://www.stackhawk.com/blog/django-cors-guide/ for this purpose:
+
+
 Have Fun :smile:
