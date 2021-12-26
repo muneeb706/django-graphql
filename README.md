@@ -20,7 +20,7 @@ Follow the steps below to run this project:
       `python manage.py makemigrations`
       `python manage.py migrate`
       
-1.  Run the Django server by typing following commands in order:
+1.  Run the Django server by entering following commands in order:
 
       `python manage.py runserver`
       
