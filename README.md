@@ -31,5 +31,6 @@ http://localhost:8000/graphql address in the address bar of the browser.
 
 To connect with this API locally, you might need to disable cors. Follow these steps mentioned in https://www.stackhawk.com/blog/django-cors-guide/ for this purpose:
 
+Visit [Building GraphQL APIs in Django with graphene-django package](https://muneebshahid.com/building-graphql-apis-in-django/) for detailed explanation.
 
 Have Fun :smile:
