@@ -20,11 +20,16 @@ Follow the steps below to run this project:
       `python manage.py makemigrations`
       `python manage.py migrate`
       
-1.  Run the Django server by typing following commands in order:
+1.  Run the Django server by entering following commands in order:
 
       `python manage.py runserver`
       
 Now, the project should be up and running. By default django server runs in <b>localhost:8000</b> and you should be able to access the GraphiQL interface by typing
 http://localhost:8000/graphql address in the address bar of the browser.
+
+### How to enable CORS:
+
+To connect with this API locally, you might need to disable cors. Follow these steps mentioned in https://www.stackhawk.com/blog/django-cors-guide/ for this purpose:
+
 
 Have Fun :smile:
