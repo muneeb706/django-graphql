@@ -36,9 +36,10 @@ class AddVisit(Mutation):
     visit = graphene.Field(VisitType)
 
     def mutate(self, info, input):
-        new_visit = Visit.objects.create(clinic=Clinic.objects.get(name=input.clinic_name),
-                                         patient=Patient.objects.get(name=input.patient_name),
-                                         purpose=Purpose.objects.get(name=input.purpose))
+        new_visit = Visit.objects.create(
+            clinic=Clinic.objects.get(name=input.clinic_name),
+            patient=Patient.objects.get(name=input.patient_name),
+            purpose=Purpose.objects.get(name=input.purpose))
         return AddVisit(visit=new_visit)
 
 
@@ -50,7 +51,8 @@ class UpdateVisitPurpose(Mutation):
 
     def mutate(self, info, input):
         updated_visit = Visit.objects.get(id=input.id)
-        updated_visit.purpose = Purpose.objects.get(name=input.purpose)
+        updated_visit.purpose = Purpose.objects.get(
+                                    name=input.purpose)
         updated_visit.save()
         return UpdateVisitPurpose(updated_visit)
 
